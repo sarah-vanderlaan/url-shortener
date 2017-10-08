@@ -1,0 +1,38 @@
+$height: 50px;
+
+.url-input {
+  input {
+    width: 70%;
+    padding-left: 10px;
+    height: $height;
+    font-size: 16px;
+    background: lightgray;
+    border: 1px solid transparent;
+    color: black;
+    border-radius: 4px;
+
+    @media (max-width: 767px) {
+      width: calc(100% - 10px); //for padding
+    }
+  }
+
+  button {
+    height: $height + 4px; //extra 4px for padding
+    width: calc(30% - 25px);
+    margin-left: 10px;
+
+    @media (max-width: 767px) {
+      margin-left: 0px;
+      margin-top: 10px;
+      width: calc(100% + 4px); //for padding
+    }
+  }
+  .error {
+    color: red;
+  }
+
+  .indicator {
+    padding-top: 5px;
+  }
+
+}

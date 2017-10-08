@@ -1,0 +1,20 @@
+@import './variables';
+
+.url-card {
+  padding-top: 20px;
+
+  a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+
+  .shortcode {
+    color: $appColor;
+  }
+
+  .full-url {
+    color: grey;
+    font-size: 12px;
+  }
+}
