@@ -41,4 +41,13 @@ describe('URL Reducer', () => {
     };
     expect(reducer(state, action).urls).toEqual([]);
   });
+
+  it('should handle API_CALL_FAILURE', () => {
+    const action = { type: types.API_CALL_FAILURE };
+    const state = {
+      urls: ["test.com"],
+      isFetching: true
+    };
+    expect(reducer(state, action).isFetching).toEqual(false);
+  });
 });

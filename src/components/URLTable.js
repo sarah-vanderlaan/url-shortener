@@ -3,7 +3,6 @@ import URLCard from './URLCard';
 import Button from './common/Button';
 
 const URLTable = ({ urls, clear }) => {
-
   return (
     <div className="url-table">
       <div className="title">My shortened links:</div>

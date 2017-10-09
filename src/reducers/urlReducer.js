@@ -10,7 +10,8 @@ export default function urlReducer(state = initialState, action) {
     case types.SHORTEN_URL_REQUEST:
       return Object.assign({}, state, { isFetching: true });
     case types.SHORTEN_URL_SUCCESS: {
-      let urls = [action.url, ...state.urls];
+      let urls = state.urls;
+      if(action.url) urls = [action.url, ...state.urls];
       return Object.assign({}, state, { urls, isFetching: false });
     }
     case types.API_CALL_FAILURE:

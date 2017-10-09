@@ -49,7 +49,7 @@ class InputURL extends React.Component {
         <Button onClick={this.onSubmit} label="Shorten it!"/>
         <div className="indicator">
           {this.props.isFetching &&
-            <PulseLoader color="#0e48a5" size="10px" margin="4px"/>}
+            <PulseLoader color="#006666" size="10px" margin="4px"/>}
           {!this.state.valid &&
             <div className="error">Please enter a valid URL</div>}
         </div>

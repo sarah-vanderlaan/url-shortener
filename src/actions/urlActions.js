@@ -22,8 +22,13 @@ export function shortenURL(urlToShorten) {
     .then(res => res.json())
     .then(
       data => {
-        let url = { shortcode: data.slashtag, fullURL: data.destination };
-        dispatch({ type: types.SHORTEN_URL_SUCCESS, url });
+        //Temporary way to handle all errors returned by the API
+        //Ideally, should handle different types of errors accordingly
+        if(data.errors) dispatch({ type: types.API_CALL_FAILURE });
+        else {
+          let url = { shortcode: data.slashtag, fullURL: data.destination };
+          dispatch({ type: types.SHORTEN_URL_SUCCESS, url });
+        }
       },
       err => {
         dispatch({ type: types.API_CALL_FAILURE });
