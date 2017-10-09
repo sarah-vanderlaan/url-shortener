@@ -22,3 +22,7 @@ Currently I have implemented an error being displayed to the user underneath the
 ### LOADING STATE:
 I have used a library called Halogen to add animated loading dots when the short link is being requested.  (See: InputURL component)
 ![alt text](https://raw.githubusercontent.com/sarah-vanderlaan/url-shortener/master/resources/loading.png)
+
+## Future
+
+I would like to extend this application in the future to better handle the different errors returned by the rebrandly API.  I also would like to leverage some of the other functionality available from the API to give more information to the user - an example being displaying the date when the link was created, or allowing the user to request a specific shortcode.  
