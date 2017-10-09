@@ -25,8 +25,7 @@ app.use('/shorten', function(req, res) {
     uri: "https://api.rebrandly.com/v1/links",
     method: "POST",
     body: JSON.stringify({
-      destination: req.body.url,
-      domain: { fullName: "rebrand.ly" }
+      destination: req.body.url
     }),
     headers: {
       "Content-Type": "application/json",
