@@ -10,6 +10,14 @@ A simple app to shorten a given URL.
 
 ## Features
 
+1) React and Redux due to my familiarity with the libraries
+2) Babel to compile ES6
+3) Webpack to bundle files and leverage hot reloading during development
+4) Express server to proxy requests
+5) ESLint to report style/syntax issues
+6) SCSS for improved css syntax
+7) localStorage for persistent state on refresh/leaving page/etc.
+
 ### RESPONSIVE DESIGN:
 Renders nicely in both desktop and mobile view:
 ![alt text](https://raw.githubusercontent.com/sarah-vanderlaan/url-shortener/master/resources/mobile.png)
