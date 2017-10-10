@@ -10,7 +10,7 @@ describe('App', () => {
   let defaultProps = {
     shortenURL: ()=> {},
     urls: [{
-      shortcode: "te23",
+      shortUrl: "te23",
       fullURL: "www.test.com"
     }],
     isFetching: false,
