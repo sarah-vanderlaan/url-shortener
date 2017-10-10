@@ -11,8 +11,8 @@ describe('URLTable', () => {
   let defaultProps = {
     clear: () => {},
     urls: [
-      {shortcode: "12345", fullURL: "www.test.com"},
-      {shortcode: "98765", fullURL: "www.google.ca"}
+      {shortUrl: "12345", fullURL: "www.test.com"},
+      {shortUrl: "98765", fullURL: "www.google.ca"}
     ]
   };
   let makeProps = (props) => Object.assign({}, defaultProps, props);

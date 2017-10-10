@@ -14,7 +14,7 @@ const URLTable = ({ urls, clear }) => {
 
 URLTable.propTypes = {
   urls: PropTypes.arrayOf(PropTypes.shape({
-    shortcode: PropTypes.string.isRequired,
+    shortUrl: PropTypes.string.isRequired,
     fullURL: PropTypes.string.isRequired
   })).isRequired,
   clear: PropTypes.func.isRequired

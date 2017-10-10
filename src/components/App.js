@@ -20,7 +20,6 @@ export class UnwrappedApp extends React.Component {
           submitURL={this.props.shortenURL}
           isFetching={this.props.isFetching}/>
 
-        {/* No need to show URLTable component if no urls present */}
         {urlsExist &&
           <URLTable urls={this.props.urls} clear={this.props.clearURLs}/>}
       </div>

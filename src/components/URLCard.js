@@ -11,8 +11,7 @@ const URLCard = ({ url }) => {
   return (
     <div className="url-card">
       <a href={url.fullURL} target="_blank">
-        shooooort.com/
-        <span className="shortcode">{url.shortcode}</span>
+        <span className="shortcode">{url.shortUrl}</span>
       </a>
       <div className="full-url">{truncatedURL}</div>
     </div>
@@ -21,7 +20,7 @@ const URLCard = ({ url }) => {
 
 URLCard.propTypes = {
   url: PropTypes.shape({
-    shortcode: PropTypes.string.isRequired,
+    shortUrl: PropTypes.string.isRequired,
     fullURL: PropTypes.string.isRequired
   }).isRequired
 };

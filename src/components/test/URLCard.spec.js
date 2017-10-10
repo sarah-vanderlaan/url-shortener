@@ -7,7 +7,7 @@ describe('URLCard', () => {
 
   it('truncates a URL over 70 characters', () => {
     let url = {
-      shortcode: "12sd5",
+      shortUrl: "rebrand.ly/4xby",
       fullURL: "http://www.anExampleOfALongLongLongLongLongLongURLThatIsOver70Chars.com"
     };
     let wrapper = shallow(<URLCard url={url} />);
@@ -19,7 +19,7 @@ describe('URLCard', () => {
   it('does not truncate URL under 70 chars', () => {
     let fullURL = "http://www.anExampleOfAShortURL.com";
     let url = {
-      shortcode: "12sd5",
+      shortUrl: "rebrand.ly/4xby",
       fullURL
     };
     let wrapper = shallow(<URLCard url={url} />);

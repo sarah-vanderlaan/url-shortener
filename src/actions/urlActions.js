@@ -24,9 +24,10 @@ export function shortenURL(urlToShorten) {
       data => {
         //Temporary way to handle all errors returned by the API
         //Ideally, should handle different types of errors accordingly
-        if(data.errors) dispatch({ type: types.API_CALL_FAILURE });
-        else {
-          let url = { shortcode: data.slashtag, fullURL: data.destination };
+        if(data.errors) {
+          dispatch({ type: types.API_CALL_FAILURE });
+        } else {
+          let url = { shortUrl: data.shortUrl, fullURL: data.destination };
           dispatch({ type: types.SHORTEN_URL_SUCCESS, url });
         }
       },
